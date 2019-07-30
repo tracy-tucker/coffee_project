@@ -19,9 +19,9 @@ class CoffeeSale::CLI
   end
   
   def get_user_selection
-    @coffees.each_with_index do |index, coffee|
+    @coffees.each_with_index do |coffee, index|
       binding.pry
-      puts "#{index + 1} #{coffee}"
+      puts "#{index + 1}. #{coffee}"
     end
   end
 
