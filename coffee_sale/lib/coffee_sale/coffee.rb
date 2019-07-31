@@ -10,6 +10,7 @@ class CoffeeSale::Coffee
   end
 
   def self.all
+    CoffeeSale::Scraper.scrape_coffees if @@all.empty?
     @@all
   end
     

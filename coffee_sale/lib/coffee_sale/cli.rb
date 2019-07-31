@@ -10,8 +10,6 @@ class CoffeeSale::CLI
   
   def get_coffees
     # to be scraped instead
-    CoffeeSale::Coffee.new('coffee_1')
-    CoffeeSale::Coffee.new('coffee_2')
     @coffees = CoffeeSale::Coffee.all
   end
   
