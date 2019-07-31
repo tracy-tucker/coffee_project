@@ -1,11 +1,11 @@
 class CoffeeSale::CLI
 
   def call
-    puts "Welcome to CoffeeIcon: Manager's Special - Enjoy limited time deals on select brands"
+    puts "Welcome to CoffeeIcon: Specials - Enjoy limited time deals on select brands".colorize(:light_blue)
     get_coffees
     list_coffees
     get_user_selection
-    # show_coffee_descr(name, orig_price, sale_price, count, strength, flavored, organic, kosher)
+    # show_coffee_descr(name)
   end
   
   def get_coffees
@@ -14,7 +14,7 @@ class CoffeeSale::CLI
   end
   
   def list_coffees
-    puts "Choose a number to see coffee details."
+    puts "Choose a number to see coffee details.".colorize(:green)
     @coffees.each.with_index(1) do |coffee, index|
       puts "#{index}. #{coffee.name}"
     end
@@ -31,7 +31,7 @@ class CoffeeSale::CLI
   
   def show_coffee_descr_for(chosen_coffee)
     coffee = @coffees[chosen_coffee - 1] # -1 because an index of an array always starts at 0
-    puts "More information about #{coffee}."
+    puts "More information about #{coffee.name}."
   end
 
 end

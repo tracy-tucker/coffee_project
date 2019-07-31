@@ -6,6 +6,7 @@ require_relative "./coffee_sale/scraper"
 require 'pry'
 require 'nokogiri'
 require 'open-uri'
+require 'colorize'
 
 module CoffeeSale
   class Error < StandardError; end
