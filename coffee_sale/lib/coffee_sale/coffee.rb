@@ -1,7 +1,21 @@
-# class CoffeeSale::Coffee
+class CoffeeSale::Coffee
   
-#   def initialize(name)
+  attr_accessor :name 
+  
+  @@all = []
+  
+  def initialize(name)
+    @name = name
+    save
+  end
+
+  def self.all
+    @@all
+  end
     
-#   end
+  def save
+    @@all << self
+  end
   
-# end
+  
+end

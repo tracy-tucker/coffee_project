@@ -1,10 +1,10 @@
 require_relative "./coffee_sale/version"
 require_relative "./coffee_sale/cli"
-# require_relative "./coffee_sale/coffee"
-# require_relative "./coffee_sale/scraper"
+require_relative "./coffee_sale/coffee"
+require_relative "./coffee_sale/scraper"
 
 require 'pry'
-# require 'nokogiri'
+require 'nokogiri'
 # require 'open-uri'
 
 module CoffeeSale
