@@ -11,4 +11,9 @@ class CoffeeSale::Scraper
     end
   end
   
+  def self.scrape_details(coffee)
+    CoffeeSale::Detail.new("Cool name", coffee)
+    CoffeeSale::Detail.new("Uncool name", coffee)
+  end
+  
 end
