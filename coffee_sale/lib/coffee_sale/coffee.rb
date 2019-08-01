@@ -1,7 +1,6 @@
 class CoffeeSale::Coffee
   
-  attr_accessor :name
-  attr_writer :details
+  attr_accessor :name, :orig_price, :sale_price
   
   @@all = []
   

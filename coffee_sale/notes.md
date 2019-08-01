@@ -9,7 +9,6 @@ I'm going to scrape the website for the following:
 Name => name
 Original Price => orig_price
 Sale Price => sale_price
-Count => count
 Strength => strength
 Flavored => flavored
 Organic => organic
