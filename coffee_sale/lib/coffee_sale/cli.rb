@@ -34,11 +34,21 @@ class CoffeeSale::CLI
     coffee = @coffees[chosen_coffee - 1] # -1 because an index of an array always starts at 0
     puts "More information about #{coffee.name.colorize(:light_blue)}."
     puts "Original Price: #{coffee.orig_price} - SALE PRICE: #{coffee.sale_price}"
-    puts "Press Y to continue, or N to exit".colorize(:green)
+    puts "Another selection? (Y/N)".colorize(:green)
+    # get_answer
   end
   
-  def valid_continue?
-    
-  end
+  # def valid_answer(answer)
+  #   answer =  (("Y" || "y")? list_coffees: ("N" || "n")? puts "Good-bye": puts "Try again" list_coffees)
+  # end
+  
+  # def get_answer
+  #   answer = gets.strip
+      
+  # end
+  
+  # def valid_continue(answer)
+  #   answer =  (("Y" || "y")? list_coffees: ("N" || "n")? puts "Good-bye": puts "Try again" list_coffees)
+  # end
 
 end
