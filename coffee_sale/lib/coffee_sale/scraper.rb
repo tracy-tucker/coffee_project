@@ -12,8 +12,10 @@ class CoffeeSale::Scraper
   end
   
   def self.scrape_details(coffee)
+    details = []
     CoffeeSale::Detail.new("$10.99", "$8.99")
     CoffeeSale::Detail.new("$7.99", "$5.99")
+    details << self
   end
   
 end

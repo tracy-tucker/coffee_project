@@ -1,16 +1,12 @@
 class CoffeeSale::Detail
   
-  attr_accessor :name, :coffee, :orig_pric, :sale_price
+  attr_accessor :name, :coffee, :details
   
   @@all = []
   
-  def initialize(orig_pric, sale_price)  #initialize is communicating with scraper.rb to grabbing the "name" value
-    @orig_pric = orig_pric
-    @sale_price = sale_price
-    # @details = details
+  def initialize(orig_price, sale_price)  #initialize is communicating with scraper.rb to grabbing the "orig_price" and "sale_price" values
+    @details = details
     save  #refer to the #save method
-    # @coffee = coffee
-    #notify month about the event
     add_to_coffee
   end
   
@@ -19,7 +15,7 @@ class CoffeeSale::Detail
   end
   
   def add_to_coffee
-    # binding.pry
+    binding.pry
     @coffee.details << self unless @coffee.details.include?(self) 
   end
 
