@@ -1,6 +1,6 @@
 class CoffeeSale::Detail
   
-  attr_accessor :name, :orig_pric, :sale_price
+  attr_accessor :name, :coffee, :orig_pric, :sale_price
   
   @@all = []
   
@@ -20,7 +20,7 @@ class CoffeeSale::Detail
   
   def add_to_coffee
     # binding.pry
-    CoffeeSale::Coffee.details << self
+    @coffee.details << self unless @coffee.details.include?(self) 
   end
 
   def save  #Taking the newly added Coffee (self) and SAVING it in the @@all array

@@ -31,7 +31,7 @@ class CoffeeSale::CLI
   
   def show_coffee_descr_for(chosen_coffee)
     coffee = @coffees[chosen_coffee - 1] # -1 because an index of an array always starts at 0
-    details = coffee.details
+    coffee.get_details
     puts "More information about #{coffee.name}."
   end
 

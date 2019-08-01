@@ -1,6 +1,6 @@
 class CoffeeSale::Coffee
   
-  attr_accessor :name, :orig_price, :sale_price
+  attr_accessor :name, :details
   
   @@all = []
   
@@ -14,10 +14,9 @@ class CoffeeSale::Coffee
     CoffeeSale::Scraper.scrape_coffees if @@all.empty?
     @@all
   end
-  
-  def details
+
+  def get_details
     CoffeeSale::Scraper.scrape_details(self) if @details.empty?
-    @details
   end
     
   def save  #Taking the newly added Coffee (self) and SAVING it in the @@all array
