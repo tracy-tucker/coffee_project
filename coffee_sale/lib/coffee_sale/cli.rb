@@ -5,7 +5,7 @@ class CoffeeSale::CLI
     get_coffees
     list_coffees
     get_user_selection
-    # show_coffee_descr(name)
+    # show_coffee_descr
   end
   
   def get_coffees
@@ -32,8 +32,13 @@ class CoffeeSale::CLI
   def show_coffee_descr_for(chosen_coffee)
     # binding.pry
     coffee = @coffees[chosen_coffee - 1] # -1 because an index of an array always starts at 0
-    puts "More information about #{coffee.name}.".colorize(:green)
+    puts "More information about #{coffee.name.colorize(:light_blue)}."
     puts "Original Price: #{coffee.orig_price} - SALE PRICE: #{coffee.sale_price}"
+    puts "Press Y to continue, or N to exit".colorize(:green)
+  end
+  
+  def valid_continue?
+    
   end
 
 end
