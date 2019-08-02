@@ -16,10 +16,6 @@ class CoffeeSale::Coffee
     @@all
   end
 
-  # def get_details
-  #   CoffeeSale::Scraper.scrape_details(self) if @details.empty?
-  # end
-    
   def save  #Taking the newly added Coffee (self) and SAVING it in the @@all array
     @@all << self
   end
