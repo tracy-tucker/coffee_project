@@ -1,10 +1,21 @@
 # CoffeeSale
 
-Coffee project
+Welcome to CoffeeIcon: Specials!
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/coffee_sale`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is a CLI Gem Portfolio project for OO Ruby learning purposes.
 
-TODO: Delete this and the text above, and describe your gem
+It shows an Object Oriented Ruby application using the following concepts:
+Module Namespacing
+The use of the concept of "self" with Class Methods
+The use of the concept of "self" with Intance Methods
+Instance Variables
+Class Variables
+Command Line Interface (CLI)
+Data extraction from an external source
+
+On the lighter side, it does provide a great user interface for retrieving the latest manager's specials on coffee pods from the CoffeeIcon website!
+I do plan on ellaborating on this project in the future to pull even more data so stay tuned!
+
 
 ## Installation
 
@@ -24,7 +35,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+After installing the gem, the interface will ask the user to make a number selection. The number is based on whatever number of listed specials that are currently available on the CoffeeIcon Manager's Special page.
+
+Once the user has made a selection and hit ENTER, the interface will retrieve and display the description of that coffee to the user.
+The description should include the coffee name, original price and sale price.
+
+The interface will also prompt the user to either press any key to revisit the list to make another selection, or to type "exit" in order to exit the interface.
+If the use decides to exit, the interface will prompt with a good-bye message and terminate interaction.
 
 ## Development
 
