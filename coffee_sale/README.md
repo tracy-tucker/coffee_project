@@ -14,7 +14,7 @@ Command Line Interface (CLI)
 Data extraction from an external source
 
 On the lighter side, it does provide a great user interface for retrieving the latest manager's specials on coffee pods from the CoffeeIcon website!
-I do plan on ellaborating on this project in the future to pull even more data so stay tuned!
+I do plan on elaborating on this project in the future to pull even more data so stay tuned!
 
 
 ## Installation

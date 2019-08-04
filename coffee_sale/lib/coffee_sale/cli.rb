@@ -13,7 +13,6 @@ class CoffeeSale::CLI
   end
   
   def get_coffees
-    # to be scraped instead
     @coffees = CoffeeSale::Coffee.all
   end
   
