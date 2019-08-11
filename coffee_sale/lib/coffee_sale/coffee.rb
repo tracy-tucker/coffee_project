@@ -25,6 +25,7 @@ class CoffeeSale::Coffee
     self.all.collect do |name|
       name.include?(string_arg)
     end
+    name
   end
   
 end
