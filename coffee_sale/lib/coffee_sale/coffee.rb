@@ -20,11 +20,11 @@ class CoffeeSale::Coffee
     @@all << self
   end
   
-  def self.find_my_coffee(searched_string) # search for a coffee based on a search criteria. Return all coffees that match that criteria
-  all.collect do |c|
-    c.indclude?(searched_string)
-    searched_string if != searched_string
-  end
+  def self.find_by_name(string_arg)
+  # returns all coffee instances whose name includes that search string argument
+    self.all.collect do |name|
+      name.include?(string_arg)
+    end
   end
   
 end
