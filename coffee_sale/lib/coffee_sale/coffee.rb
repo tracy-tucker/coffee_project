@@ -20,13 +20,17 @@ class CoffeeSale::Coffee
     @@all << self
   end
   
-  # def self.find_by_name(string_arg)
-  # # returns all coffee instances whose name includes that search string argument
-  #   self.all.collect do |name|
-  #     name.include?(string_arg)
-  #   end
-  # end
+  def self.find_by_name(str_arg)
+  # returns all coffee instances whose name includes that search string argument
+    self.all.collect do |name|
+      name.include?(string_arg)
+      binding.pry
+    end
+  end
   
-  def self.find_by_name(string_arg)
+  # def self.find_by_name(str_arg)
+  #   self.all.select {|c| c.include?(string_arg)}
+  #   binding.pry
+  # end
   
 end
