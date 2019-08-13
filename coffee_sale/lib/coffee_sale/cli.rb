@@ -21,6 +21,7 @@ class CoffeeSale::CLI
     @coffees.each.with_index(1) do |coffee, index|
       puts "#{index}. #{coffee.name}"
     end
+    binding.pry
   end
   
   def get_user_selection
